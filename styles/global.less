@@ -26,12 +26,12 @@
 
 body {
 
-  background-color: #444;
+  background-color: @background;
   color: @bodyTextColor;
 
   .bg-image;
 
-  #canvas { background-color: #444; }
+  #canvas { background-color: @canvasBackground; }
   &.site-title .logo {
     a { color: @siteTitleColor; }
     a:hover { color: @siteTitleHoverColor; }
@@ -41,7 +41,7 @@ body {
     .active-link > a { color: @navActiveColor; }
     a:hover { color: @navHoverColor; }
   }
-  h1 { color: #333;
+  h1 { color: @heading1Color;
     &.entry-title {
       a, a:visited { color: @heading1Color; }
       a:hover { color: @linkHoverColor; }
